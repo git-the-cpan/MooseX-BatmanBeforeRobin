@@ -6,7 +6,7 @@ MooseX::BatmanBeforeRobin - Ordered Moose sugar
 
 =head1 VERSION
 
-0.02
+0.0201
 
 =head1 SYNOPSIS
 
@@ -47,7 +47,7 @@ use Moose ();
 use namespace::autoclean ();
 use Moose::Exporter;
 
-our $VERSION = '0.02';
+our $VERSION = eval '0.0201';
 
 Moose::Exporter->setup_import_methods(
     with_meta => [qw/ one __PACKAGE__ /],
@@ -143,10 +143,9 @@ sub init_meta {
     return $options{'for_class'}->meta;
 }
 
-=head1 COPYRIGHT & LICENSE
+=head1 BUGS
 
-This library is free software. You can redistribute it and/or modify
-it under the same terms as Perl itself.
+=head1 COPYRIGHT & LICENSE
 
 =head1 AUTHOR
 
